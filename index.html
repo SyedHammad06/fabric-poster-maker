@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght260;260;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght260;260;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Poster Designer</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hindavi Graphics Poster Designer</h1>
+    </header>
+    <main>
+      <aside>
+        <canvas id="canvas" />
+      </aside>
+      <aside>
+        <form>
+          <div>
+            <label for="back">Upload Background:</label>
+            <input type="file" id="back" accept="image/*" />
+          </div>
+          <div>
+            <label for="image">Upload Image / Logo:</label>
+            <input type="file" id="image" accept="image/*" />
+          </div>
+          <div>
+            <label for="frames">Upload Frames:</label>
+            <input type="file" id="frame" accept="image/*" />
+          </div>
+          <div>
+            <label for="text">Enter Text:</label>
+            <span>
+              <input type="text" id="text" placeholder="Enter Text" required />
+              <button id="add-text">Add Text</button>
+            </span>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </aside>
+    </main>
+    <footer>
+      <p>
+        Built by: <a href="https://www.fidelx.xyz" target="_blank">Fidelx</a>
+      </p>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"
+      integrity="sha512-CeIsOAsgJnmevfCi2C7Zsyy6bQKi43utIjdA87Q0ZY84oDqnI0uwfM9+bKiIkI75lUeI00WG/+uJzOmuHlesMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
