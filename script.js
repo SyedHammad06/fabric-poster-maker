@@ -81,3 +81,22 @@ document.getElementById('frame').addEventListener('change', function (e) {
   };
   reader.readAsText(file);
 });
+
+/*
+ * Save Canvas
+ */
+document.getElementById('save').addEventListener('click', (e) => {
+  e.preventDefault();
+  const code = JSON.stringify(canvas);
+  console.log(code);
+
+  var data = canvas.toDataURL({
+    format: 'png',
+    quality: 1,
+  });
+
+  var link = document.createElement('a');
+  link.download = 'canvas.png';
+  link.href = data;
+  link.click();
+});
